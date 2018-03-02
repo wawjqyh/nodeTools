@@ -1,5 +1,5 @@
 const wxConfig = require("../../config/config").wechat;
-const wxApi = require("../api/wechat");
+const wxApi = require("../api/wxApi");
 const fs = require("fs");
 const axios = require("axios");
 const path = require("path");

@@ -2,6 +2,9 @@ const token = require("../service/token");
 const wxConfig = require("../../config/config").wechat;
 const sha1 = require("sha1");
 
+/**
+ * @desc 获取jsApi配置
+ */
 module.exports = async function (ctx, next) {
     let jsApiTicket = await token.jsApiTicket();
     let nonce = Math.random().toString(36).substr(2, 15);
